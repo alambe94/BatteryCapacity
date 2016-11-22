@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 2x16_LCD)(type KiCad)(uri "$(KIPRJMOD)/FootPrints/2x16_LCD.pretty")(options "")(descr ""))
+)

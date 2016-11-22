@@ -1,0 +1,231 @@
+
+Map of Debug\stm8s003.sm8 from link file Debug\stm8s003.lkf - Wed Oct 12 19:57:07 2016
+
+
+                               --------
+                               Segments
+                               --------
+
+start 00008080 end 00008080 length     0 segment .const
+start 00008083 end 000080e5 length    98 segment .text
+start 00004000 end 00004000 length     0 segment .eeprom
+start 00000000 end 00000000 length     0 segment .bsct
+start 00000000 end 00000006 length     6 segment .ubsct
+start 00000006 end 00000006 length     0 segment .bit
+start 00000006 end 00000006 length     0 segment .share
+start 00000100 end 00000100 length     0 segment .data
+start 00000100 end 00000100 length     0 segment .bss
+start 00000000 end 0000028d length   653 segment .info.
+start 00000000 end 00000865 length  2149 segment .debug
+start 00008000 end 00008080 length   128 segment .const
+start 00008080 end 00008083 length     3 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8:
+start 00008083 end 000080ce length    75 section .text
+start 00000100 end 00000100 length     0 section .bss
+start 00000000 end 00000000 length     0 section .ubsct
+start 00000000 end 00000030 length    48 section .info.
+
+Debug\main.o:
+start 00000000 end 0000010f length   271 section .debug
+start 00000030 end 000000c1 length   145 section .info.
+start 000080ce end 000080d0 length     2 section .text
+start ******** end ******** length     0 section .text *** removed ***
+
+Debug\stm8s_it.o:
+start 0000010f end 0000073f length  1584 section .debug
+start 000000c1 end 00000156 length   149 section .info.
+start 000080d0 end 000080d1 length     1 section .text
+start 000080d1 end 000080d2 length     1 section .text
+start 000080d2 end 000080d3 length     1 section .text
+start 000080d3 end 000080d4 length     1 section .text
+start 000080d4 end 000080d5 length     1 section .text
+start 000080d5 end 000080d6 length     1 section .text
+start 000080d6 end 000080d7 length     1 section .text
+start 000080d7 end 000080d8 length     1 section .text
+start 000080d8 end 000080d9 length     1 section .text
+start 000080d9 end 000080da length     1 section .text
+start 000080da end 000080db length     1 section .text
+start 000080db end 000080dc length     1 section .text
+start 000080dc end 000080dd length     1 section .text
+start 000080dd end 000080de length     1 section .text
+start 000080de end 000080df length     1 section .text
+start 000080df end 000080e0 length     1 section .text
+start 000080e0 end 000080e1 length     1 section .text
+start 000080e1 end 000080e2 length     1 section .text
+start 000080e2 end 000080e3 length     1 section .text
+start 000080e3 end 000080e4 length     1 section .text
+start 000080e4 end 000080e5 length     1 section .text
+
+(C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\libm0.sm8)xreg.o:
+start 00000000 end 00000003 length     3 section .ubsct
+start 00000156 end 00000185 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\libm0.sm8)yreg.o:
+start 00000003 end 00000006 length     3 section .ubsct
+start 00000185 end 000001b4 length    47 section .info.
+
+Debug\stm8_interrupt_vector.o:
+start 0000073f end 00000865 length   294 section .debug
+start 000001b4 end 00000256 length   162 section .info.
+start 00008000 end 00008080 length   128 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Debug\main.o:
+_main                              >    2   (2)
+
+Debug\stm8s_it.o:
+f_ADC1_IRQHandler                  >    6   (6)
+f_AWU_IRQHandler                   >    6   (6)
+f_CLK_IRQHandler                   >    6   (6)
+f_EEPROM_EEC_IRQHandler            >    6   (6)
+f_EXTI_PORTA_IRQHandler            >    6   (6)
+f_EXTI_PORTB_IRQHandler            >    6   (6)
+f_EXTI_PORTC_IRQHandler            >    6   (6)
+f_EXTI_PORTD_IRQHandler            >    6   (6)
+f_EXTI_PORTE_IRQHandler            >    6   (6)
+f_I2C_IRQHandler                   >    6   (6)
+f_NonHandledInterrupt              >    6   (6)
+f_SPI_IRQHandler                   >    6   (6)
+f_TIM1_CAP_COM_IRQHandler          >    6   (6)
+f_TIM1_UPD_OVF_TRG_BRK_IRQHandler  >    6   (6)
+f_TIM2_CAP_COM_IRQHandler          >    6   (6)
+f_TIM2_UPD_OVF_BRK_IRQHandler      >    6   (6)
+f_TIM4_UPD_OVF_IRQHandler          >    6   (6)
+f_TLI_IRQHandler                   >    6   (6)
+f_TRAP_IRQHandler                  >    6   (6)
+f_UART1_RX_IRQHandler              >    6   (6)
+f_UART1_TX_IRQHandler              >    6   (6)
+
+Stack size: 8
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > __stext: (0)
+
+   2 > _main: (2)
+
+   3 > f_ADC1_IRQHandler: (6)
+
+   4 > f_AWU_IRQHandler: (6)
+
+   5 > f_CLK_IRQHandler: (6)
+
+   6 > f_EEPROM_EEC_IRQHandler: (6)
+
+   7 > f_EXTI_PORTA_IRQHandler: (6)
+
+   8 > f_EXTI_PORTB_IRQHandler: (6)
+
+   9 > f_EXTI_PORTC_IRQHandler: (6)
+
+  10 > f_EXTI_PORTD_IRQHandler: (6)
+
+  11 > f_EXTI_PORTE_IRQHandler: (6)
+
+  12 > f_I2C_IRQHandler: (6)
+
+  13 > f_NonHandledInterrupt: (6)
+
+  14 > f_SPI_IRQHandler: (6)
+
+  15 > f_TIM1_CAP_COM_IRQHandler: (6)
+
+  16 > f_TIM1_UPD_OVF_TRG_BRK_IRQHandler: (6)
+
+  17 > f_TIM2_CAP_COM_IRQHandler: (6)
+
+  18 > f_TIM2_UPD_OVF_BRK_IRQHandler: (6)
+
+  19 > f_TIM4_UPD_OVF_IRQHandler: (6)
+
+  20 > f_TLI_IRQHandler: (6)
+
+  21 > f_TRAP_IRQHandler: (6)
+
+  22 > f_UART1_RX_IRQHandler: (6)
+
+  23 > f_UART1_TX_IRQHandler: (6)
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+__endmem                            000001ff   defined in command file
+                                               *** not used ***
+__endzp                             00000006   defined in command file section .ubsct
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+__idesc__                           00008080   defined in linker section .init
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+__memory                            00000100   defined in command file section .bss
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+__stack                             000003ff   defined in command file
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+__startmem                          00000100   defined in command file section .bss
+                                               *** not used ***
+__stext                             00008083   defined in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8 section .text
+                                               used in Debug\stm8_interrupt_vector.o
+__vectab                            00008000   defined in Debug\stm8_interrupt_vector.o section .const
+_assert_failed                      ********   *** removed from Debug\main.o ***
+_exit                               000080cc   defined in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8 section .text
+_main                               000080ce   defined in Debug\main.o section .text
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+c_x                                 00000000   defined in (C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\libm0.sm8)xreg.o section .ubsct
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+c_y                                 00000003   defined in (C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\libm0.sm8)yreg.o section .ubsct
+                                               used in C:\Program Files (x86)\COSMIC\CXSTM8_EVAL\Lib\crtsi0.sm8
+f_ADC1_IRQHandler                   000080e2   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_AWU_IRQHandler                    000080d3   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_CLK_IRQHandler                    000080d4   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EEPROM_EEC_IRQHandler             000080e4   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTA_IRQHandler             000080d5   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTB_IRQHandler             000080d6   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTC_IRQHandler             000080d7   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTD_IRQHandler             000080d8   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTE_IRQHandler             000080d9   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_I2C_IRQHandler                    000080e1   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_NonHandledInterrupt               000080d0   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_SPI_IRQHandler                    000080da   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM1_CAP_COM_IRQHandler           000080dc   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM1_UPD_OVF_TRG_BRK_IRQHandler   000080db   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM2_CAP_COM_IRQHandler           000080de   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM2_UPD_OVF_BRK_IRQHandler       000080dd   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM4_UPD_OVF_IRQHandler           000080e3   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TLI_IRQHandler                    000080d2   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TRAP_IRQHandler                   000080d1   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_UART1_RX_IRQHandler               000080e0   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_UART1_TX_IRQHandler               000080df   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
