@@ -58,6 +58,9 @@ uint8_t Check_Complete =False;
 uint8_t Battery_Ok = False;
 
 
+int i;
+
+
 
 
 /* Private function prototypes -----------------------------------------------*/
@@ -231,7 +234,7 @@ Check_Complete=True;
     GPIO_WriteLow(GPIOD,Nmos);
 
 //************ Measuring Battery Voltage ***********
-for(int i=0;i< 100;i++)
+for(i=0;i< 100;i++)
   {
    sample1=sample1+Get_ADC_Value(A0); 
    delay_ms(1);
@@ -242,7 +245,7 @@ for(int i=0;i< 100;i++)
   
 
   // *********  Measuring Resistor Voltage ***********
-   for(int i=0;i< 100;i++)
+   for( i=0;i< 100;i++)
   {
    sample2=sample2+Get_ADC_Value(A1); 
    delay_ms(1);
@@ -314,7 +317,7 @@ for(int i=0;i< 100;i++)
     {
     GPIO_WriteHigh(GPIOD,Nmos);
     
-    for(int i=0;i< 100;i++)
+    for( i=0;i< 100;i++)
   {
    sample1=sample1+Get_ADC_Value(A0); //read the voltage from the divider circuit
    delay_ms(1);
@@ -325,7 +328,7 @@ for(int i=0;i< 100;i++)
   
 
   // *********  Measuring Resistor Voltage ***********
-   for(int i=0;i< 100;i++)
+   for( i=0;i< 100;i++)
   {
    sample2=sample2+Get_ADC_Value(A1); //read the voltage from the divider circuit
    delay_ms(1);

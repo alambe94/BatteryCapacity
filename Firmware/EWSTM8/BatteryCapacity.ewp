@@ -87,7 +87,7 @@
         </option>
         <option>
           <name>GenHeapSize</name>
-          <state>0x100</state>
+          <state>0x00</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -257,8 +257,8 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state>C:\Users\sam\Desktop\BatteryCapacity\inc</state>
-          <state>C:\Users\sam\Desktop\BatteryCapacity\STM8S_StdPeriph_Driver\inc</state>
+          <state>C:\Users\sam\Desktop\BatteryCapacity\Firmware\inc</state>
+          <state>C:\Users\sam\Desktop\BatteryCapacity\Firmware\STM8S_StdPeriph_Driver\inc</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>

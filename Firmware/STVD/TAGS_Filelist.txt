@@ -11,7 +11,7 @@
 ..\inc\millis.h
 ..\inc\stm8s_conf.h
 ..\inc\stm8s_it.h
-..\..\..\..\..\program files (x86)\cosmic\cxstm8_eval\hstm8\mods0.h
+..\..\..\..\..\..\program files (x86)\cosmic\cxstm8_eval\hstm8\mods0.h
 ..\stm8s_stdperiph_driver\inc\stm8s.h
 ..\stm8s_stdperiph_driver\inc\stm8s_adc1.h
 ..\stm8s_stdperiph_driver\inc\stm8s_awu.h

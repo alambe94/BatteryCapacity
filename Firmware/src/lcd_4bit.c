@@ -1,4 +1,5 @@
 #include "lcd_4bit.h"
+#include "stm8s.h"
 #include "millis.h"
 
 
@@ -33,7 +34,7 @@ void Lcd_Cmd(unsigned char c) {
 	Lcd_Enable();
 }
 
-void Lcd_Init() {
+void Lcd_Init(void) {
 GPIO_Init(Lcd_Port,GPIO_PIN_7,GPIO_MODE_OUT_PP_LOW_FAST);
 GPIO_Init(Lcd_Port,GPIO_PIN_6,GPIO_MODE_OUT_PP_LOW_FAST);
 GPIO_Init(Lcd_Port,GPIO_PIN_5,GPIO_MODE_OUT_PP_LOW_FAST);

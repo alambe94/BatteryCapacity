@@ -25,7 +25,7 @@
 void Lcd_Enable(void);
 void Lcd_Data(unsigned char c);
 void Lcd_Cmd(unsigned char c);
-void Lcd_Init();
+void Lcd_Init(void);
 void Lcd_String(char *p);
 
 #endif /* LCD_4BIT_H_ */
